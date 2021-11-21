@@ -1,5 +1,2 @@
-import {removeKeyNonDestructive} from './mild/mild_2.js'; 
-let idrecord = { name: 'John Martin', title: 'Instructor', age: 41, password: 'supersecretpassword' }; 
-let newrecord = removeKeyNonDestructive(idrecord, 'age'); 
-console.log(idrecord); 
-console.log(newrecord);
+import {getMedian} from './medium/medium_1.js'; 
+console.log(getMedian([14,8,5,7,7,5,2,7,5,3,47,9]));
