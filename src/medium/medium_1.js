@@ -59,6 +59,18 @@ export function getMedian(array) {
  }
  */
 export function getStatistics(array) {
-
+    let maximum = Math.max(...array);
+    let minimum = Math.min(...array);
+    let standdev = Math.sqrt(variance(array, getSum(array)/array.length));
+    return {
+        length: array.length, 
+        sum: getSum(array),
+        mean: getSum(array) / array.length,
+        median: getMedian(array),
+        min: minimum,
+        max: maximum,
+        variance: variance(array, (getSum(array)/array.length)),
+        standard_deviation: standdev
+    }
 }
 
