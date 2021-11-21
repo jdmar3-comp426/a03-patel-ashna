@@ -8,7 +8,8 @@
  */
 export function identifyVariable(variable) {
    return {
-      type: `type: '${typeof variable}', value: '${variable}'`
+      type: typeof variable,
+      value: variable
    }
 }
 
