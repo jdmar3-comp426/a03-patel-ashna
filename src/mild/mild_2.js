@@ -71,10 +71,8 @@ export function removeKey(object, key) {
  obj will not have the `password` field only because it was assigned the result of the function.
  If only `removeKeyNonDestructive` was called, nothing would have changed.
  */
-export function removeKeyNonDestructive(object, key) {
-   let helper = object;
-   delete helper[key];
-   return helper;
+export function removeKeyNonDestructive(object, key) { 
+   return obj;
 }
 
 /**
