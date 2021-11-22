@@ -34,7 +34,8 @@ export function searchHighPower(car_data, minHorsepower, minTorque) {
  *
  */
 export function searchMpg(car_data, minCity, minHighway) {
-
+    let filtered = car_data.filter(car => (car.highway_mpg >= minHighway) && (car.city_mpg >= minCity));
+    return filtered.sort(function(a,b){b.highway_mpg-a.highway_mpg})
 }
 
 
