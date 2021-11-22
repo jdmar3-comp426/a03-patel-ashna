@@ -70,7 +70,7 @@ export function getStatistics(array) {
         min: minimum,
         max: maximum,
         variance: variance(array, (getSum(array)/array.length)),
-        standard_deviation: standdev
+        standard_deviation: Math.pow(variance(array, (getSum(array)/array.length)), 0.5)
     }
 }
 
