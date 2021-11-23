@@ -21,6 +21,7 @@ export const repeat = (fn, n, ...params) => {
     }
     return arrayOfValues;
 };
+//why am i getting an error here??
 
 
 /**
@@ -30,7 +31,7 @@ export const repeat = (fn, n, ...params) => {
 export const repeatDemo = () => {
     repeat(helloworld=> console.log(helloworld), 10, ...["Hello, world!"]);
 };
-
+//getting same error as above, probably because calling function repeat
 
 /**************************************************************************
  *
