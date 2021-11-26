@@ -1,3 +1,2 @@
-import car_data from './medium/data/mpg_data.js'; 
-import {searchByYear} from './medium/medium_3.js'; 
-console.log(searchByYear(car_data, [ 2016, 2018 ]));
+import {multiplyBy} from './spicy/spicy_9.js'; 
+console.log(multiplyBy(3)(5));
