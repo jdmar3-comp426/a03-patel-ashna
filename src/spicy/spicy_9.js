@@ -184,10 +184,10 @@ export const allEvensAreOdd = (arr) => {
  */
 export const anEvenIsOdd = (arr) => {
     for (let i = 0; i < arr.length; i = i+2) {
-        if ((arr[i]) %2 != 0) {
-            return false;
+        if ((arr[i]) %2 == 0) {
+            return true;
         } 
-    } return true;
+    } return false;
 };
 
 
