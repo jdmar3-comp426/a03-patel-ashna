@@ -1,2 +1,2 @@
-import {someEven} from './spicy/spicy_9.js'; 
-console.log(someEven([5, 7, 1, 7, 1, 7, 1, 7], x => x === 7));
+import {allEvensAreOdd} from './spicy/spicy_9.js'; 
+console.log(allEvensAreOdd([4, 5, 6, 7, 8, 9, 7]));
